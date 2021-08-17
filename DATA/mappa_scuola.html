@@ -1,0 +1,2647 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8e9fb8ecfcde4006a9b4531ed88eb7fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8e9fb8ecfcde4006a9b4531ed88eb7fa" ></div>
+        
+</body>
+<script>    
+    
+            var map_8e9fb8ecfcde4006a9b4531ed88eb7fa = L.map(
+                "map_8e9fb8ecfcde4006a9b4531ed88eb7fa",
+                {
+                    center: [40.17688799807691, 18.16167024387781],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    zoomStarter: 10,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f82ea1d35852414e9b5445dc3e9c40d9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8e9fb8ecfcde4006a9b4531ed88eb7fa);
+        
+    
+            var marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8 = L.markerClusterGroup(
+                {}
+            );
+            map_8e9fb8ecfcde4006a9b4531ed88eb7fa.addLayer(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var marker_3f000ab45ef24e09a65c1959af053a06 = L.marker(
+                [40.0263947, 18.1296866],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_d0cadb92ad6d4946af920621af2599a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3f000ab45ef24e09a65c1959af053a06.setIcon(icon_d0cadb92ad6d4946af920621af2599a8);
+        
+    
+        var popup_50e5749c90c6479087aadc3475d74f74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_849f2ddae1394f098b7bc9c061e15964 = $(`<div id="html_849f2ddae1394f098b7bc9c061e15964" style="width: 100.0%; height: 100.0%;">Codice: LEEE00100C Denominazione: 1 C.D. "C. BATTISTI" Dirigente: RIELLI MARIA ROSARIA</div>`)[0];
+            popup_50e5749c90c6479087aadc3475d74f74.setContent(html_849f2ddae1394f098b7bc9c061e15964);
+        
+
+        marker_3f000ab45ef24e09a65c1959af053a06.bindPopup(popup_50e5749c90c6479087aadc3475d74f74)
+        ;
+
+        
+    
+    
+            marker_3f000ab45ef24e09a65c1959af053a06.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd5cc44d4cee431da67b990d4ebfd2c8 = L.marker(
+                [40.3412096, 18.1789135],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_1b7a8a278e4a4ef4bd469a60e3a9166b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dd5cc44d4cee431da67b990d4ebfd2c8.setIcon(icon_1b7a8a278e4a4ef4bd469a60e3a9166b);
+        
+    
+        var popup_7a04c0da86db4767b53b7ac065429867 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_addbbb30887241e6bf309ad4e14fee8f = $(`<div id="html_addbbb30887241e6bf309ad4e14fee8f" style="width: 100.0%; height: 100.0%;">Codice: LEEE00400X Denominazione: 4 C.D. "S. CASTROMEDIANO" Dirigente: FAGGIANO TIZIANA</div>`)[0];
+            popup_7a04c0da86db4767b53b7ac065429867.setContent(html_addbbb30887241e6bf309ad4e14fee8f);
+        
+
+        marker_dd5cc44d4cee431da67b990d4ebfd2c8.bindPopup(popup_7a04c0da86db4767b53b7ac065429867)
+        ;
+
+        
+    
+    
+            marker_dd5cc44d4cee431da67b990d4ebfd2c8.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a60331a3fd4147809eeea3d0e85b1572 = L.marker(
+                [40.3662498, 18.1758629],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_a1ca9aee3efd4aab95685ec851edb6b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a60331a3fd4147809eeea3d0e85b1572.setIcon(icon_a1ca9aee3efd4aab95685ec851edb6b9);
+        
+    
+        var popup_efb932f8d96b401ca2fc99877e83d8b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d5a2453a2734168bbc6aba78370f19b = $(`<div id="html_6d5a2453a2734168bbc6aba78370f19b" style="width: 100.0%; height: 100.0%;">Codice: LEEE00500Q Denominazione: 5 C.D. "L. TEMPESTA" Dirigente: BACCA TONINO</div>`)[0];
+            popup_efb932f8d96b401ca2fc99877e83d8b8.setContent(html_6d5a2453a2734168bbc6aba78370f19b);
+        
+
+        marker_a60331a3fd4147809eeea3d0e85b1572.bindPopup(popup_efb932f8d96b401ca2fc99877e83d8b8)
+        ;
+
+        
+    
+    
+            marker_a60331a3fd4147809eeea3d0e85b1572.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e908d5a75414f4d99253c55456c3ccf = L.marker(
+                [40.3964531, 18.1326717],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_ff46ba4a3b644654a98e7e545107c425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2e908d5a75414f4d99253c55456c3ccf.setIcon(icon_ff46ba4a3b644654a98e7e545107c425);
+        
+    
+        var popup_25f4beb6945743f683428d4002ad2be9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3702fd829b4e4563b876e33d87e3f46c = $(`<div id="html_3702fd829b4e4563b876e33d87e3f46c" style="width: 100.0%; height: 100.0%;">Codice: LEEE081009 Denominazione: C.D. "V. AMPOLO" Dirigente: CAPONE MARIA TERESA</div>`)[0];
+            popup_25f4beb6945743f683428d4002ad2be9.setContent(html_3702fd829b4e4563b876e33d87e3f46c);
+        
+
+        marker_2e908d5a75414f4d99253c55456c3ccf.bindPopup(popup_25f4beb6945743f683428d4002ad2be9)
+        ;
+
+        
+    
+    
+            marker_2e908d5a75414f4d99253c55456c3ccf.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01b623524b95410ba609b05f55885821 = L.marker(
+                [40.3127288, 18.1940611],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_6fdf2b01fc654c0598acf93a8f42bccd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_01b623524b95410ba609b05f55885821.setIcon(icon_6fdf2b01fc654c0598acf93a8f42bccd);
+        
+    
+        var popup_17debaf59592427197b5c47a6b8e36ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d036aa15a06144d89ae2e3843124bba8 = $(`<div id="html_d036aa15a06144d89ae2e3843124bba8" style="width: 100.0%; height: 100.0%;">Codice: LEIC80000E Denominazione: I.C. CAVALLINO Dirigente: MARENACI CATERINA</div>`)[0];
+            popup_17debaf59592427197b5c47a6b8e36ff.setContent(html_d036aa15a06144d89ae2e3843124bba8);
+        
+
+        marker_01b623524b95410ba609b05f55885821.bindPopup(popup_17debaf59592427197b5c47a6b8e36ff)
+        ;
+
+        
+    
+    
+            marker_01b623524b95410ba609b05f55885821.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93ba4a00ad0d4acfac15a8ca91afa852 = L.marker(
+                [39.8608472, 18.3020543],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_d5235544daf240b690dafbf5391d89e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_93ba4a00ad0d4acfac15a8ca91afa852.setIcon(icon_d5235544daf240b690dafbf5391d89e0);
+        
+    
+        var popup_1c672014a4df4b52984c14ece52300ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d18077775f0440588af5d0259b36427 = $(`<div id="html_6d18077775f0440588af5d0259b36427" style="width: 100.0%; height: 100.0%;">Codice: LEIC803002 Denominazione: I.C. SALVE Dirigente: LATERZA VERONICA</div>`)[0];
+            popup_1c672014a4df4b52984c14ece52300ad.setContent(html_6d18077775f0440588af5d0259b36427);
+        
+
+        marker_93ba4a00ad0d4acfac15a8ca91afa852.bindPopup(popup_1c672014a4df4b52984c14ece52300ad)
+        ;
+
+        
+    
+    
+            marker_93ba4a00ad0d4acfac15a8ca91afa852.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c1ebf2f89e445fdb7e511c33af0e1ac = L.marker(
+                [39.8914259, 18.331007],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_27c0616906cb468b80f605541d51ce68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6c1ebf2f89e445fdb7e511c33af0e1ac.setIcon(icon_27c0616906cb468b80f605541d51ce68);
+        
+    
+        var popup_553d813cdb824c749b28d0fd5ba35dc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a1eac14f300486783c87a3d1b1b2fc2 = $(`<div id="html_6a1eac14f300486783c87a3d1b1b2fc2" style="width: 100.0%; height: 100.0%;">Codice: LEIC80400T Denominazione: I.C. ALESSANO Dirigente: ACCOGLI SALVATORA</div>`)[0];
+            popup_553d813cdb824c749b28d0fd5ba35dc8.setContent(html_6a1eac14f300486783c87a3d1b1b2fc2);
+        
+
+        marker_6c1ebf2f89e445fdb7e511c33af0e1ac.bindPopup(popup_553d813cdb824c749b28d0fd5ba35dc8)
+        ;
+
+        
+    
+    
+            marker_6c1ebf2f89e445fdb7e511c33af0e1ac.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfc0aeb3dbc74d948c3e595f7cd5813b = L.marker(
+                [40.1261812, 18.1256988],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_bf1ab2759af54e0a822eb9ea8d8dc558 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bfc0aeb3dbc74d948c3e595f7cd5813b.setIcon(icon_bf1ab2759af54e0a822eb9ea8d8dc558);
+        
+    
+        var popup_b3a5c611f01e4950915db0ec616cdcdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_110bec602efa49cd85c34aba38495ae5 = $(`<div id="html_110bec602efa49cd85c34aba38495ae5" style="width: 100.0%; height: 100.0%;">Codice: LEIC810005 Denominazione: I.C. ARADEO Dirigente: CEZZA CARMELA</div>`)[0];
+            popup_b3a5c611f01e4950915db0ec616cdcdb.setContent(html_110bec602efa49cd85c34aba38495ae5);
+        
+
+        marker_bfc0aeb3dbc74d948c3e595f7cd5813b.bindPopup(popup_b3a5c611f01e4950915db0ec616cdcdb)
+        ;
+
+        
+    
+    
+            marker_bfc0aeb3dbc74d948c3e595f7cd5813b.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f1595959f1f4ec9b2f0b64f411f103c = L.marker(
+                [40.2543523, 18.2755306],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_9a775e01c43b4676b7600172dcc6d0cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5f1595959f1f4ec9b2f0b64f411f103c.setIcon(icon_9a775e01c43b4676b7600172dcc6d0cb);
+        
+    
+        var popup_c11093d2cbea4efb9e34452c9be1116a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89c5d93d38b04f83bff8e9af8b810d7d = $(`<div id="html_89c5d93d38b04f83bff8e9af8b810d7d" style="width: 100.0%; height: 100.0%;">Codice: LEIC816004 Denominazione: I.C. CALIMERA Dirigente: LIGORI PIERA</div>`)[0];
+            popup_c11093d2cbea4efb9e34452c9be1116a.setContent(html_89c5d93d38b04f83bff8e9af8b810d7d);
+        
+
+        marker_5f1595959f1f4ec9b2f0b64f411f103c.bindPopup(popup_c11093d2cbea4efb9e34452c9be1116a)
+        ;
+
+        
+    
+    
+            marker_5f1595959f1f4ec9b2f0b64f411f103c.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1caa87f4621a45df86f299bd8dda74a5 = L.marker(
+                [40.2758087, 18.3385775],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_744c19b9b1a14bf28f62add929130e17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1caa87f4621a45df86f299bd8dda74a5.setIcon(icon_744c19b9b1a14bf28f62add929130e17);
+        
+    
+        var popup_8e19c29d5a0346f88317909193927531 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64b01d3248c84da095683ad9c22fb3ae = $(`<div id="html_64b01d3248c84da095683ad9c22fb3ae" style="width: 100.0%; height: 100.0%;">Codice: LEIC829006 Denominazione: I.C. MELENDUGNO Dirigente: CARATI ANNA RITA</div>`)[0];
+            popup_8e19c29d5a0346f88317909193927531.setContent(html_64b01d3248c84da095683ad9c22fb3ae);
+        
+
+        marker_1caa87f4621a45df86f299bd8dda74a5.bindPopup(popup_8e19c29d5a0346f88317909193927531)
+        ;
+
+        
+    
+    
+            marker_1caa87f4621a45df86f299bd8dda74a5.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cedaae24e20e4a53927cb4e519d382f9 = L.marker(
+                [40.2629318, 17.89504],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_8ce0871f88f440f38ab8652b75f63d88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cedaae24e20e4a53927cb4e519d382f9.setIcon(icon_8ce0871f88f440f38ab8652b75f63d88);
+        
+    
+        var popup_7743e51ac0fa4d8b9393c0c4ceb715d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bcecec6879749879f8d41d35c6002d0 = $(`<div id="html_9bcecec6879749879f8d41d35c6002d0" style="width: 100.0%; height: 100.0%;">Codice: LEIC831006 Denominazione: I.C. PORTO CESAREO Dirigente: CASTELLANO ORNELLA</div>`)[0];
+            popup_7743e51ac0fa4d8b9393c0c4ceb715d3.setContent(html_9bcecec6879749879f8d41d35c6002d0);
+        
+
+        marker_cedaae24e20e4a53927cb4e519d382f9.bindPopup(popup_7743e51ac0fa4d8b9393c0c4ceb715d3)
+        ;
+
+        
+    
+    
+            marker_cedaae24e20e4a53927cb4e519d382f9.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0380f3e8aeea4b7b80f59076bb38fe77 = L.marker(
+                [40.2887429, 18.0058873],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_b7e8487a8bb24ccfadb10ea76d978ada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0380f3e8aeea4b7b80f59076bb38fe77.setIcon(icon_b7e8487a8bb24ccfadb10ea76d978ada);
+        
+    
+        var popup_997114c97ecb406dbcf390148212fa5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7347491290d74af387ad554b1e40473a = $(`<div id="html_7347491290d74af387ad554b1e40473a" style="width: 100.0%; height: 100.0%;">Codice: LEIC832002 Denominazione: I.C. "DON LORENZO MILANI" Dirigente: SAPONARO ANTONIO</div>`)[0];
+            popup_997114c97ecb406dbcf390148212fa5a.setContent(html_7347491290d74af387ad554b1e40473a);
+        
+
+        marker_0380f3e8aeea4b7b80f59076bb38fe77.bindPopup(popup_997114c97ecb406dbcf390148212fa5a)
+        ;
+
+        
+    
+    
+            marker_0380f3e8aeea4b7b80f59076bb38fe77.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19e75e6a54a94b10a561f327069a0f11 = L.marker(
+                [40.3177292, 18.0942688],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_e82e1ed358094610a44b8b06a8312c2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_19e75e6a54a94b10a561f327069a0f11.setIcon(icon_e82e1ed358094610a44b8b06a8312c2f);
+        
+    
+        var popup_298dc78f6cdc4ae19c80b64e4c2b61b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd61baa1b08f4cda85b99998af36a157 = $(`<div id="html_dd61baa1b08f4cda85b99998af36a157" style="width: 100.0%; height: 100.0%;">Codice: LEIC840001 Denominazione: I.C. "VITTORIO BODINI" Dirigente: NATALE ADDOLORATA</div>`)[0];
+            popup_298dc78f6cdc4ae19c80b64e4c2b61b9.setContent(html_dd61baa1b08f4cda85b99998af36a157);
+        
+
+        marker_19e75e6a54a94b10a561f327069a0f11.bindPopup(popup_298dc78f6cdc4ae19c80b64e4c2b61b9)
+        ;
+
+        
+    
+    
+            marker_19e75e6a54a94b10a561f327069a0f11.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a986f6b7cf446b18c17b229ed87e8a0 = L.marker(
+                [40.3292704, 18.10117385421625],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_b34d4b8db478445aac510b4da9bfc3fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2a986f6b7cf446b18c17b229ed87e8a0.setIcon(icon_b34d4b8db478445aac510b4da9bfc3fa);
+        
+    
+        var popup_7fcc186cc83f49ce99279f6503526cb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30b29e9300404150ab98a57159d35703 = $(`<div id="html_30b29e9300404150ab98a57159d35703" style="width: 100.0%; height: 100.0%;">Codice: LEIC84100R Denominazione: I.C. POLO 1 MONTERONI DI LECCE Dirigente: SIGNORE LOREDANA</div>`)[0];
+            popup_7fcc186cc83f49ce99279f6503526cb7.setContent(html_30b29e9300404150ab98a57159d35703);
+        
+
+        marker_2a986f6b7cf446b18c17b229ed87e8a0.bindPopup(popup_7fcc186cc83f49ce99279f6503526cb7)
+        ;
+
+        
+    
+    
+            marker_2a986f6b7cf446b18c17b229ed87e8a0.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a373102cb50a405b824bce108f2c54ae = L.marker(
+                [40.37928705, 18.051418568586087],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_988bfe2cb32b4644bb9154ac83617dc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a373102cb50a405b824bce108f2c54ae.setIcon(icon_988bfe2cb32b4644bb9154ac83617dc2);
+        
+    
+        var popup_f8db185e3dd34a5d8e07236511b945a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b963a5a4cd8542e8b93fea1af943db9a = $(`<div id="html_b963a5a4cd8542e8b93fea1af943db9a" style="width: 100.0%; height: 100.0%;">Codice: LEIC84200L Denominazione: I.C. NOVOLI Dirigente: DELL'ATTI ELISABETTA</div>`)[0];
+            popup_f8db185e3dd34a5d8e07236511b945a1.setContent(html_b963a5a4cd8542e8b93fea1af943db9a);
+        
+
+        marker_a373102cb50a405b824bce108f2c54ae.bindPopup(popup_f8db185e3dd34a5d8e07236511b945a1)
+        ;
+
+        
+    
+    
+            marker_a373102cb50a405b824bce108f2c54ae.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03e1c3ca655d4b608ec3d8e43ae09abf = L.marker(
+                [40.1047217, 18.4508477],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_bd3fed8425bd4ef99a5cf940f32dfc6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_03e1c3ca655d4b608ec3d8e43ae09abf.setIcon(icon_bd3fed8425bd4ef99a5cf940f32dfc6f);
+        
+    
+        var popup_0ebfc813bd424ff28691b23d860e2640 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75ef83efbe774527b88ec68d4e6781bc = $(`<div id="html_75ef83efbe774527b88ec68d4e6781bc" style="width: 100.0%; height: 100.0%;">Codice: LEIC84300C Denominazione: I.C. UGGIANO LA CHIESA Dirigente: GALLO PIETRO VINCENZO</div>`)[0];
+            popup_0ebfc813bd424ff28691b23d860e2640.setContent(html_75ef83efbe774527b88ec68d4e6781bc);
+        
+
+        marker_03e1c3ca655d4b608ec3d8e43ae09abf.bindPopup(popup_0ebfc813bd424ff28691b23d860e2640)
+        ;
+
+        
+    
+    
+            marker_03e1c3ca655d4b608ec3d8e43ae09abf.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3f4d4b57c604555bc44c46ae80ec8a2 = L.marker(
+                [40.0478955, 18.1267904],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_c97ab9e3b69b4b0f8f4ef3a2bc1bbf3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b3f4d4b57c604555bc44c46ae80ec8a2.setIcon(icon_c97ab9e3b69b4b0f8f4ef3a2bc1bbf3e);
+        
+    
+        var popup_e7fb55e11149498daf9fb34cd7367653 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a7323d83f4640a0a3e938c1130a6bce = $(`<div id="html_5a7323d83f4640a0a3e938c1130a6bce" style="width: 100.0%; height: 100.0%;">Codice: LEIC84600X Denominazione: I.C. PARABITA Dirigente: PERRONE ANTONIA</div>`)[0];
+            popup_e7fb55e11149498daf9fb34cd7367653.setContent(html_5a7323d83f4640a0a3e938c1130a6bce);
+        
+
+        marker_b3f4d4b57c604555bc44c46ae80ec8a2.bindPopup(popup_e7fb55e11149498daf9fb34cd7367653)
+        ;
+
+        
+    
+    
+            marker_b3f4d4b57c604555bc44c46ae80ec8a2.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4594347da31040bca69bbf3b7aff58ae = L.marker(
+                [40.38639515, 17.960251893589717],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_d516469e35d04a64b15a2e0a2e62ad94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4594347da31040bca69bbf3b7aff58ae.setIcon(icon_d516469e35d04a64b15a2e0a2e62ad94);
+        
+    
+        var popup_86192f47a51c4022b4a1dd83c85d88d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c6916ae3bcf40a5b520bf1161a9f25e = $(`<div id="html_6c6916ae3bcf40a5b520bf1161a9f25e" style="width: 100.0%; height: 100.0%;">Codice: LEIC85100B Denominazione: I.C. SALICE SALENTINO Dirigente: SERRA MICHELE</div>`)[0];
+            popup_86192f47a51c4022b4a1dd83c85d88d1.setContent(html_6c6916ae3bcf40a5b520bf1161a9f25e);
+        
+
+        marker_4594347da31040bca69bbf3b7aff58ae.bindPopup(popup_86192f47a51c4022b4a1dd83c85d88d1)
+        ;
+
+        
+    
+    
+            marker_4594347da31040bca69bbf3b7aff58ae.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2201740c4fbc4a6eb2381bdeee94c5d5 = L.marker(
+                [40.3072025, 18.1623042],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_804b55495b0d494db4c13f5982dd5ff4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2201740c4fbc4a6eb2381bdeee94c5d5.setIcon(icon_804b55495b0d494db4c13f5982dd5ff4);
+        
+    
+        var popup_c1dbe5b80bff43628b68a7fb69330f0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ebb029db07f4f44bf2d093091100654 = $(`<div id="html_6ebb029db07f4f44bf2d093091100654" style="width: 100.0%; height: 100.0%;">Codice: LEIC853003 Denominazione: I.C. SAN CESARIO DI LECCE Dirigente: VERRIENTI ROSSELLA</div>`)[0];
+            popup_c1dbe5b80bff43628b68a7fb69330f0f.setContent(html_6ebb029db07f4f44bf2d093091100654);
+        
+
+        marker_2201740c4fbc4a6eb2381bdeee94c5d5.bindPopup(popup_c1dbe5b80bff43628b68a7fb69330f0f)
+        ;
+
+        
+    
+    
+            marker_2201740c4fbc4a6eb2381bdeee94c5d5.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e900e83f1424938adc044ce47ea3a86 = L.marker(
+                [39.961254, 18.1014924],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_a22399fd55854fb2934667d0c29ca079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1e900e83f1424938adc044ce47ea3a86.setIcon(icon_a22399fd55854fb2934667d0c29ca079);
+        
+    
+        var popup_9820c6dde3b94aefa1f0896225d65876 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f4440973320496bab5001cf0b881c53 = $(`<div id="html_2f4440973320496bab5001cf0b881c53" style="width: 100.0%; height: 100.0%;">Codice: LEIC85700A Denominazione: I.C. RACALE Dirigente: MANZO STEFANIA</div>`)[0];
+            popup_9820c6dde3b94aefa1f0896225d65876.setContent(html_2f4440973320496bab5001cf0b881c53);
+        
+
+        marker_1e900e83f1424938adc044ce47ea3a86.bindPopup(popup_9820c6dde3b94aefa1f0896225d65876)
+        ;
+
+        
+    
+    
+            marker_1e900e83f1424938adc044ce47ea3a86.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5e66f31c15e48ecb58a58dc4f63e0bd = L.marker(
+                [40.0141975, 18.1538231],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_9aa4b3363f854f07b6cc038891ad3e5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b5e66f31c15e48ecb58a58dc4f63e0bd.setIcon(icon_9aa4b3363f854f07b6cc038891ad3e5f);
+        
+    
+        var popup_28d32e553ce1495e9a1b0c4371d1e213 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98746e320d31438e9270d1f2a0b549cd = $(`<div id="html_98746e320d31438e9270d1f2a0b549cd" style="width: 100.0%; height: 100.0%;">Codice: LEIC860006 Denominazione: I.C. CASARANO POLO 2 Dirigente: CASCIONE LUISA</div>`)[0];
+            popup_28d32e553ce1495e9a1b0c4371d1e213.setContent(html_98746e320d31438e9270d1f2a0b549cd);
+        
+
+        marker_b5e66f31c15e48ecb58a58dc4f63e0bd.bindPopup(popup_28d32e553ce1495e9a1b0c4371d1e213)
+        ;
+
+        
+    
+    
+            marker_b5e66f31c15e48ecb58a58dc4f63e0bd.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71de9bf17a9f491ea381b9daef2d7047 = L.marker(
+                [40.0102818, 18.160111315856987],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_d037291b1a3248339bd4cfeb4f2a7f96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_71de9bf17a9f491ea381b9daef2d7047.setIcon(icon_d037291b1a3248339bd4cfeb4f2a7f96);
+        
+    
+        var popup_57669c610c6446119e3345432d5df6e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_702c3d4874814cd38bbf4cb36ea3152e = $(`<div id="html_702c3d4874814cd38bbf4cb36ea3152e" style="width: 100.0%; height: 100.0%;">Codice: LEIC861002 Denominazione: I.C. CASARANO POLO3 G. GALILEI" Dirigente: PRIMICERI RITA AUGUSTA</div>`)[0];
+            popup_57669c610c6446119e3345432d5df6e3.setContent(html_702c3d4874814cd38bbf4cb36ea3152e);
+        
+
+        marker_71de9bf17a9f491ea381b9daef2d7047.bindPopup(popup_57669c610c6446119e3345432d5df6e3)
+        ;
+
+        
+    
+    
+            marker_71de9bf17a9f491ea381b9daef2d7047.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59c2a338c0584fffafd8b7f9e2cacf2a = L.marker(
+                [40.2650988, 18.043994],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_514adcdf258a49d4ad4d3d83460ec460 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_59c2a338c0584fffafd8b7f9e2cacf2a.setIcon(icon_514adcdf258a49d4ad4d3d83460ec460);
+        
+    
+        var popup_560442dcef8549bd8a4cf4c9c6d98406 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9efbb74760d7470895b4d5e964d39294 = $(`<div id="html_9efbb74760d7470895b4d5e964d39294" style="width: 100.0%; height: 100.0%;">Codice: LEIC86400D Denominazione: I.C. "G. FALCONE" Dirigente: CASTELLANO ORNELLA</div>`)[0];
+            popup_560442dcef8549bd8a4cf4c9c6d98406.setContent(html_9efbb74760d7470895b4d5e964d39294);
+        
+
+        marker_59c2a338c0584fffafd8b7f9e2cacf2a.bindPopup(popup_560442dcef8549bd8a4cf4c9c6d98406)
+        ;
+
+        
+    
+    
+            marker_59c2a338c0584fffafd8b7f9e2cacf2a.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78fd9d5d4be54d12a4c5d100d4c4e94c = L.marker(
+                [40.2754835, 18.0470851],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_f854c6d81eee42bcb06cd26e85915e6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_78fd9d5d4be54d12a4c5d100d4c4e94c.setIcon(icon_f854c6d81eee42bcb06cd26e85915e6c);
+        
+    
+        var popup_6ee53117c3ed436d8ec475a904a8c563 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75f341fb829f47e4bffcc6b3a6c2d9b3 = $(`<div id="html_75f341fb829f47e4bffcc6b3a6c2d9b3" style="width: 100.0%; height: 100.0%;">Codice: LEIC865009 Denominazione: I.C. "SAN GIUSEPPE DA COPERTINO Dirigente: GIURI ELEONORA</div>`)[0];
+            popup_6ee53117c3ed436d8ec475a904a8c563.setContent(html_75f341fb829f47e4bffcc6b3a6c2d9b3);
+        
+
+        marker_78fd9d5d4be54d12a4c5d100d4c4e94c.bindPopup(popup_6ee53117c3ed436d8ec475a904a8c563)
+        ;
+
+        
+    
+    
+            marker_78fd9d5d4be54d12a4c5d100d4c4e94c.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e898ad5a87324a9d94acb4e5180d1e41 = L.marker(
+                [40.2709623, 18.0499786],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_72d4b80efebb4146afb11269b688a13e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e898ad5a87324a9d94acb4e5180d1e41.setIcon(icon_72d4b80efebb4146afb11269b688a13e);
+        
+    
+        var popup_7101e87432164918846b4e05cf15c88a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_262bff9315564c4fabdd96c3f33c4e8e = $(`<div id="html_262bff9315564c4fabdd96c3f33c4e8e" style="width: 100.0%; height: 100.0%;">Codice: LEIC867001 Denominazione: I.C. COPERTINO POLO 1 Dirigente: SELVAROLO ANGELA</div>`)[0];
+            popup_7101e87432164918846b4e05cf15c88a.setContent(html_262bff9315564c4fabdd96c3f33c4e8e);
+        
+
+        marker_e898ad5a87324a9d94acb4e5180d1e41.bindPopup(popup_7101e87432164918846b4e05cf15c88a)
+        ;
+
+        
+    
+    
+            marker_e898ad5a87324a9d94acb4e5180d1e41.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af248ece7d3b44aaaaf113041a550281 = L.marker(
+                [40.3994451, 18.0786376],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_d01cd348a8b64b9ba90e03fe8d96a7f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_af248ece7d3b44aaaaf113041a550281.setIcon(icon_d01cd348a8b64b9ba90e03fe8d96a7f5);
+        
+    
+        var popup_1c87d3d989954610a412f8ad6267269b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bcda23fd01644c58f1db50d73c56a8f = $(`<div id="html_6bcda23fd01644c58f1db50d73c56a8f" style="width: 100.0%; height: 100.0%;">Codice: LEIC86800R Denominazione: I.C. TREPUZZI POLO 2 Dirigente: VALZANO ANNA MARIA</div>`)[0];
+            popup_1c87d3d989954610a412f8ad6267269b.setContent(html_6bcda23fd01644c58f1db50d73c56a8f);
+        
+
+        marker_af248ece7d3b44aaaaf113041a550281.bindPopup(popup_1c87d3d989954610a412f8ad6267269b)
+        ;
+
+        
+    
+    
+            marker_af248ece7d3b44aaaaf113041a550281.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71e2ff1c4c6d42619a8107dbe1bbb2a1 = L.marker(
+                [40.4366621, 18.0393556],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_29cf3b6e88594d43928f930806b5bcb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_71e2ff1c4c6d42619a8107dbe1bbb2a1.setIcon(icon_29cf3b6e88594d43928f930806b5bcb8);
+        
+    
+        var popup_9152cf36b3254621ac7a10ca2f35cdb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe7514f4f9bc442ebb2f791e0ed0c773 = $(`<div id="html_fe7514f4f9bc442ebb2f791e0ed0c773" style="width: 100.0%; height: 100.0%;">Codice: LEIC87000R Denominazione: I.C. SQUINZANO Dirigente: DE SIMONE LOREDANA</div>`)[0];
+            popup_9152cf36b3254621ac7a10ca2f35cdb2.setContent(html_fe7514f4f9bc442ebb2f791e0ed0c773);
+        
+
+        marker_71e2ff1c4c6d42619a8107dbe1bbb2a1.bindPopup(popup_9152cf36b3254621ac7a10ca2f35cdb2)
+        ;
+
+        
+    
+    
+            marker_71e2ff1c4c6d42619a8107dbe1bbb2a1.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dcb39b092f44b729074beb9e4e0847b = L.marker(
+                [39.92469, 18.36264],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_9a8d406ee3004e31b9fbcbc3245707c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4dcb39b092f44b729074beb9e4e0847b.setIcon(icon_9a8d406ee3004e31b9fbcbc3245707c7);
+        
+    
+        var popup_62645e7cced54d03848fb2e4e2b790b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5024ce6c7b34bf49d9dba406953224c = $(`<div id="html_f5024ce6c7b34bf49d9dba406953224c" style="width: 100.0%; height: 100.0%;">Codice: LEIC87500X Denominazione: I.C. TRICASE VIA APULIA Dirigente: MARIANO ORONZA</div>`)[0];
+            popup_62645e7cced54d03848fb2e4e2b790b5.setContent(html_f5024ce6c7b34bf49d9dba406953224c);
+        
+
+        marker_4dcb39b092f44b729074beb9e4e0847b.bindPopup(popup_62645e7cced54d03848fb2e4e2b790b5)
+        ;
+
+        
+    
+    
+            marker_4dcb39b092f44b729074beb9e4e0847b.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_756ea7e30f8b4bd288e422ace47e4c09 = L.marker(
+                [40.0566048, 17.9955413],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_c00dc3d4adfe4a63991585246c5e31d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_756ea7e30f8b4bd288e422ace47e4c09.setIcon(icon_c00dc3d4adfe4a63991585246c5e31d7);
+        
+    
+        var popup_6faf12ac81704c5298b5ac61fa692c54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62acd4e7ef924bad87e7de0444795134 = $(`<div id="html_62acd4e7ef924bad87e7de0444795134" style="width: 100.0%; height: 100.0%;">Codice: LEIC87700G Denominazione: I.C. GALLIPOLI POLO 3 Dirigente: BIONDO MARTINELLA</div>`)[0];
+            popup_6faf12ac81704c5298b5ac61fa692c54.setContent(html_62acd4e7ef924bad87e7de0444795134);
+        
+
+        marker_756ea7e30f8b4bd288e422ace47e4c09.bindPopup(popup_6faf12ac81704c5298b5ac61fa692c54)
+        ;
+
+        
+    
+    
+            marker_756ea7e30f8b4bd288e422ace47e4c09.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7010924a9554e20b6b855c24ffa1b4d = L.marker(
+                [39.8902113, 18.3710924],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_5908e86405a74e95b1db3a5cc1ca917f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f7010924a9554e20b6b855c24ffa1b4d.setIcon(icon_5908e86405a74e95b1db3a5cc1ca917f);
+        
+    
+        var popup_aab3e8a1c30d4d71bd0ee46eb5471dbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c73dc1434084584bb014c16fb6844c6 = $(`<div id="html_9c73dc1434084584bb014c16fb6844c6" style="width: 100.0%; height: 100.0%;">Codice: LEIC881007 Denominazione: I.C. "BIAGIO ANTONAZZO" Dirigente: SIMONE FERNANDO</div>`)[0];
+            popup_aab3e8a1c30d4d71bd0ee46eb5471dbf.setContent(html_9c73dc1434084584bb014c16fb6844c6);
+        
+
+        marker_f7010924a9554e20b6b855c24ffa1b4d.bindPopup(popup_aab3e8a1c30d4d71bd0ee46eb5471dbf)
+        ;
+
+        
+    
+    
+            marker_f7010924a9554e20b6b855c24ffa1b4d.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86e580552ba04051aa5f8ad8ecad5844 = L.marker(
+                [40.1731798, 18.1667081],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_ec42983ab1664a78a18a94c8302559f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_86e580552ba04051aa5f8ad8ecad5844.setIcon(icon_ec42983ab1664a78a18a94c8302559f4);
+        
+    
+        var popup_f3c12f2f275a4adca2f1361434d57f3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49ec083bb9724618bfa9c38a8d56c5de = $(`<div id="html_49ec083bb9724618bfa9c38a8d56c5de" style="width: 100.0%; height: 100.0%;">Codice: LEIC887006 Denominazione: I.C. GALATINA POLO 1 Dirigente: ANTONICA ANNA</div>`)[0];
+            popup_f3c12f2f275a4adca2f1361434d57f3a.setContent(html_49ec083bb9724618bfa9c38a8d56c5de);
+        
+
+        marker_86e580552ba04051aa5f8ad8ecad5844.bindPopup(popup_f3c12f2f275a4adca2f1361434d57f3a)
+        ;
+
+        
+    
+    
+            marker_86e580552ba04051aa5f8ad8ecad5844.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99ba36481e1b48abb3031291f9898c6a = L.marker(
+                [40.1679329, 18.1598344],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_28e46b47c26c478fa592d756984edc89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_99ba36481e1b48abb3031291f9898c6a.setIcon(icon_28e46b47c26c478fa592d756984edc89);
+        
+    
+        var popup_5e07260671534abf91773212eb178059 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcd00c85cf8b4943a406f5ca4477f164 = $(`<div id="html_bcd00c85cf8b4943a406f5ca4477f164" style="width: 100.0%; height: 100.0%;">Codice: LEIC888002 Denominazione: I.C. GALATINA POLO 2 Dirigente: LONGO ELEONORA</div>`)[0];
+            popup_5e07260671534abf91773212eb178059.setContent(html_bcd00c85cf8b4943a406f5ca4477f164);
+        
+
+        marker_99ba36481e1b48abb3031291f9898c6a.bindPopup(popup_5e07260671534abf91773212eb178059)
+        ;
+
+        
+    
+    
+            marker_99ba36481e1b48abb3031291f9898c6a.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7dfcc7cd4684a29973200d5c9669e7e = L.marker(
+                [39.9547411, 18.2093381],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_b2daec2860bf4dc59f0dcc6c6d368b07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f7dfcc7cd4684a29973200d5c9669e7e.setIcon(icon_b2daec2860bf4dc59f0dcc6c6d368b07);
+        
+    
+        var popup_9e263145f6b749f2b30a96916ea624dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61a27a7ad96f4bc581ad6743699248ce = $(`<div id="html_61a27a7ad96f4bc581ad6743699248ce" style="width: 100.0%; height: 100.0%;">Codice: LEIC88900T Denominazione: I.C. TAURISANO POLO 1 Dirigente: BAGLIVO MARIA ABBONDANZA</div>`)[0];
+            popup_9e263145f6b749f2b30a96916ea624dd.setContent(html_61a27a7ad96f4bc581ad6743699248ce);
+        
+
+        marker_f7dfcc7cd4684a29973200d5c9669e7e.bindPopup(popup_9e263145f6b749f2b30a96916ea624dd)
+        ;
+
+        
+    
+    
+            marker_f7dfcc7cd4684a29973200d5c9669e7e.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_972f7b7d0d394de0b8c0e35e695c58ad = L.marker(
+                [40.3380151, 18.1764765],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_aace0df8ecef49d58fdd775f2667fa32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_972f7b7d0d394de0b8c0e35e695c58ad.setIcon(icon_aace0df8ecef49d58fdd775f2667fa32);
+        
+    
+        var popup_a26fd3fd026a43fbaa16e2107d92ebac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a7607c5fef34006b48e549a28521773 = $(`<div id="html_7a7607c5fef34006b48e549a28521773" style="width: 100.0%; height: 100.0%;">Codice: LEIC89100T Denominazione: I.C. "AMMIRATO - FALCONE" Dirigente: MORENA BRUNA</div>`)[0];
+            popup_a26fd3fd026a43fbaa16e2107d92ebac.setContent(html_7a7607c5fef34006b48e549a28521773);
+        
+
+        marker_972f7b7d0d394de0b8c0e35e695c58ad.bindPopup(popup_a26fd3fd026a43fbaa16e2107d92ebac)
+        ;
+
+        
+    
+    
+            marker_972f7b7d0d394de0b8c0e35e695c58ad.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73ea174401f14363b868e187ecbe47f9 = L.marker(
+                [40.1486267, 18.0698628],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_6f4b622835fa48c38acbb83f3a2bcd74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_73ea174401f14363b868e187ecbe47f9.setIcon(icon_6f4b622835fa48c38acbb83f3a2bcd74);
+        
+    
+        var popup_46e9b67df29043a280a90dbac25f1dc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82382e069e304b90b97f84dc64a33c3e = $(`<div id="html_82382e069e304b90b97f84dc64a33c3e" style="width: 100.0%; height: 100.0%;">Codice: LEIC894009 Denominazione: I.C. GALATONE POLO 1 Dirigente: POLO ADELE</div>`)[0];
+            popup_46e9b67df29043a280a90dbac25f1dc4.setContent(html_82382e069e304b90b97f84dc64a33c3e);
+        
+
+        marker_73ea174401f14363b868e187ecbe47f9.bindPopup(popup_46e9b67df29043a280a90dbac25f1dc4)
+        ;
+
+        
+    
+    
+            marker_73ea174401f14363b868e187ecbe47f9.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51524ad2545b4e2e823e9b8746315d33 = L.marker(
+                [40.1452721, 18.0744135],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_e42b78b668de413db27ba003272d0307 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_51524ad2545b4e2e823e9b8746315d33.setIcon(icon_e42b78b668de413db27ba003272d0307);
+        
+    
+        var popup_95d4b61084d643e1bbb78aa2514ca27d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4991ef5871ba4130823cb0e5e64e538c = $(`<div id="html_4991ef5871ba4130823cb0e5e64e538c" style="width: 100.0%; height: 100.0%;">Codice: LEIC895005 Denominazione: I.C. GALATONE POLO 2 Dirigente: CAPUTI ANTONIO</div>`)[0];
+            popup_95d4b61084d643e1bbb78aa2514ca27d.setContent(html_4991ef5871ba4130823cb0e5e64e538c);
+        
+
+        marker_51524ad2545b4e2e823e9b8746315d33.bindPopup(popup_95d4b61084d643e1bbb78aa2514ca27d)
+        ;
+
+        
+    
+    
+            marker_51524ad2545b4e2e823e9b8746315d33.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59bd88b2a61b48be992b47e336661939 = L.marker(
+                [40.1807723, 18.0345504],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_45fe317ff34a4d0c867294197644ac78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_59bd88b2a61b48be992b47e336661939.setIcon(icon_45fe317ff34a4d0c867294197644ac78);
+        
+    
+        var popup_c7fed3df487f40e9a502e95fcfa1c87d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6134cc725ee42169d81a685f55b0332 = $(`<div id="html_c6134cc725ee42169d81a685f55b0332" style="width: 100.0%; height: 100.0%;">Codice: LEIC89800L Denominazione: I.C. POLO 3 "PANTALEO INGUSCI" Dirigente: LONGO ELEONORA</div>`)[0];
+            popup_c7fed3df487f40e9a502e95fcfa1c87d.setContent(html_c6134cc725ee42169d81a685f55b0332);
+        
+
+        marker_59bd88b2a61b48be992b47e336661939.bindPopup(popup_c7fed3df487f40e9a502e95fcfa1c87d)
+        ;
+
+        
+    
+    
+            marker_59bd88b2a61b48be992b47e336661939.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78a658279cbe4164be54688e10d19caf = L.marker(
+                [40.3991916, 18.1321327],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_1f16a20bbb714d72b65b3e5a6cf66808 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_78a658279cbe4164be54688e10d19caf.setIcon(icon_1f16a20bbb714d72b65b3e5a6cf66808);
+        
+    
+        var popup_46485e2f30e649749d5f1c27c14ed5bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86b912bb9b7f447bbb6e2f017a44cfc7 = $(`<div id="html_86b912bb9b7f447bbb6e2f017a44cfc7" style="width: 100.0%; height: 100.0%;">Codice: LEIC89900C Denominazione: I.C. "ELISA SPRINGER" Dirigente: INGROSSO LAURA</div>`)[0];
+            popup_46485e2f30e649749d5f1c27c14ed5bb.setContent(html_86b912bb9b7f447bbb6e2f017a44cfc7);
+        
+
+        marker_78a658279cbe4164be54688e10d19caf.bindPopup(popup_46485e2f30e649749d5f1c27c14ed5bb)
+        ;
+
+        
+    
+    
+            marker_78a658279cbe4164be54688e10d19caf.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5674a5af9cf441c88217cba10dbc0cac = L.marker(
+                [39.9303051, 18.1659137],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_0263c1150eb440a1a5d709ce87f34277 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5674a5af9cf441c88217cba10dbc0cac.setIcon(icon_0263c1150eb440a1a5d709ce87f34277);
+        
+    
+        var popup_c1abbf74eae446d587b688f92dda3b90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cf7109763ce4fbdb6b15601c98406f2 = $(`<div id="html_5cf7109763ce4fbdb6b15601c98406f2" style="width: 100.0%; height: 100.0%;">Codice: LEIC8AB00R Denominazione: I.C. UGENTO Dirigente: MANCO ROBERTA</div>`)[0];
+            popup_c1abbf74eae446d587b688f92dda3b90.setContent(html_5cf7109763ce4fbdb6b15601c98406f2);
+        
+
+        marker_5674a5af9cf441c88217cba10dbc0cac.bindPopup(popup_c1abbf74eae446d587b688f92dda3b90)
+        ;
+
+        
+    
+    
+            marker_5674a5af9cf441c88217cba10dbc0cac.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27a0c5ee88b348688a3466b14b5e3251 = L.marker(
+                [40.3369109, 17.9718401],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_962aebf4ad064e38a8b150fc2da956c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_27a0c5ee88b348688a3466b14b5e3251.setIcon(icon_962aebf4ad064e38a8b150fc2da956c2);
+        
+    
+        var popup_371f3bcbb7bb4f5abec6bf510667b47a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad69b7e62791442ba735b2ece8021351 = $(`<div id="html_ad69b7e62791442ba735b2ece8021351" style="width: 100.0%; height: 100.0%;">Codice: LEIC8AF004 Denominazione: I.C. "PEPPINO IMPASTATO" Dirigente: SAVOIA DANIELA</div>`)[0];
+            popup_371f3bcbb7bb4f5abec6bf510667b47a.setContent(html_ad69b7e62791442ba735b2ece8021351);
+        
+
+        marker_27a0c5ee88b348688a3466b14b5e3251.bindPopup(popup_371f3bcbb7bb4f5abec6bf510667b47a)
+        ;
+
+        
+    
+    
+            marker_27a0c5ee88b348688a3466b14b5e3251.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a529596dfcf489fbb42b6ed62cb56b6 = L.marker(
+                [40.3335792, 17.9690006],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_7ab23e57fab949baa121877b9dd2acbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0a529596dfcf489fbb42b6ed62cb56b6.setIcon(icon_7ab23e57fab949baa121877b9dd2acbf);
+        
+    
+        var popup_3142f18d56034ba4961d2250f203f64a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8985e2cb850448e2a786537e38375b51 = $(`<div id="html_8985e2cb850448e2a786537e38375b51" style="width: 100.0%; height: 100.0%;">Codice: LEIC8AG00X Denominazione: I.C. VEGLIE POLO 2 Dirigente: SAVOIA DANIELA</div>`)[0];
+            popup_3142f18d56034ba4961d2250f203f64a.setContent(html_8985e2cb850448e2a786537e38375b51);
+        
+
+        marker_0a529596dfcf489fbb42b6ed62cb56b6.bindPopup(popup_3142f18d56034ba4961d2250f203f64a)
+        ;
+
+        
+    
+    
+            marker_0a529596dfcf489fbb42b6ed62cb56b6.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfc6cab98e5541cdaee69b6bdad5ea69 = L.marker(
+                [39.93551, 18.35346],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_72dab27c6b7b44a8bb3feaf782127909 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cfc6cab98e5541cdaee69b6bdad5ea69.setIcon(icon_72dab27c6b7b44a8bb3feaf782127909);
+        
+    
+        var popup_00a248bfaa2f4ca2a2715e557769cb88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9d2503c036b4d6786a171e9be8ebf7a = $(`<div id="html_c9d2503c036b4d6786a171e9be8ebf7a" style="width: 100.0%; height: 100.0%;">Codice: LEIC8AK00R Denominazione: I.C. "G. PASCOLI" Dirigente: TURCO ANNA MARIA</div>`)[0];
+            popup_00a248bfaa2f4ca2a2715e557769cb88.setContent(html_c9d2503c036b4d6786a171e9be8ebf7a);
+        
+
+        marker_cfc6cab98e5541cdaee69b6bdad5ea69.bindPopup(popup_00a248bfaa2f4ca2a2715e557769cb88)
+        ;
+
+        
+    
+    
+            marker_cfc6cab98e5541cdaee69b6bdad5ea69.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2356ca7ced540adb7b71999ec1aa4f9 = L.marker(
+                [40.0632409, 18.0630742],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_04cc71f0aee8402e8feaedda785d97e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d2356ca7ced540adb7b71999ec1aa4f9.setIcon(icon_04cc71f0aee8402e8feaedda785d97e4);
+        
+    
+        var popup_9ab7718ac71f453794f923a7c7581fe8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d74dfbbe7af544388bcff8babab36d3e = $(`<div id="html_d74dfbbe7af544388bcff8babab36d3e" style="width: 100.0%; height: 100.0%;">Codice: LEIC8AL00L Denominazione: I.C. ALEZIO Dirigente: STIFANELLI SABRINA</div>`)[0];
+            popup_9ab7718ac71f453794f923a7c7581fe8.setContent(html_d74dfbbe7af544388bcff8babab36d3e);
+        
+
+        marker_d2356ca7ced540adb7b71999ec1aa4f9.bindPopup(popup_9ab7718ac71f453794f923a7c7581fe8)
+        ;
+
+        
+    
+    
+            marker_d2356ca7ced540adb7b71999ec1aa4f9.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_133ad556c4164ea6a0cd19121bf2d124 = L.marker(
+                [39.9073999, 18.2523383],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_6f4aaada7add4eeda7baa0e329b7a2ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_133ad556c4164ea6a0cd19121bf2d124.setIcon(icon_6f4aaada7add4eeda7baa0e329b7a2ba);
+        
+    
+        var popup_dd8f591915214fa7af1679ac27f2f24a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2d9dfa89d914409991e719a5f6ab58e = $(`<div id="html_a2d9dfa89d914409991e719a5f6ab58e" style="width: 100.0%; height: 100.0%;">Codice: LEIC8AN008 Denominazione: I.C. PRESICCE-ACQUARICA DEL CAP Dirigente: DE MARINI ROSARIA</div>`)[0];
+            popup_dd8f591915214fa7af1679ac27f2f24a.setContent(html_a2d9dfa89d914409991e719a5f6ab58e);
+        
+
+        marker_133ad556c4164ea6a0cd19121bf2d124.bindPopup(popup_dd8f591915214fa7af1679ac27f2f24a)
+        ;
+
+        
+    
+    
+            marker_133ad556c4164ea6a0cd19121bf2d124.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d83fd8c596b64ef7ae4cdbb2a1c943c6 = L.marker(
+                [40.1245595, 18.2999194],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_7f571a69bfe14318860bbddf46551d43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d83fd8c596b64ef7ae4cdbb2a1c943c6.setIcon(icon_7f571a69bfe14318860bbddf46551d43);
+        
+    
+        var popup_bdac64bbb1b84de29b815189811bebd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b042b862eeeb48b1b57f40a379916750 = $(`<div id="html_b042b862eeeb48b1b57f40a379916750" style="width: 100.0%; height: 100.0%;">Codice: LEIC8AQ00Q Denominazione: IC PRINCIPE DI PIEMONTE -MAGLIE Dirigente: COLELLA MARIA STELLA</div>`)[0];
+            popup_bdac64bbb1b84de29b815189811bebd8.setContent(html_b042b862eeeb48b1b57f40a379916750);
+        
+
+        marker_d83fd8c596b64ef7ae4cdbb2a1c943c6.bindPopup(popup_bdac64bbb1b84de29b815189811bebd8)
+        ;
+
+        
+    
+    
+            marker_d83fd8c596b64ef7ae4cdbb2a1c943c6.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebf1c8bdd043425ca5999d6e6f23bb30 = L.marker(
+                [40.3406184, 18.1548237],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_ea35592f417d425489861ad6ad7bc879 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ebf1c8bdd043425ca5999d6e6f23bb30.setIcon(icon_ea35592f417d425489861ad6ad7bc879);
+        
+    
+        var popup_8482c424a0c34d99892982e0676037e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6fe540deee64a17807abcaa81b66e93 = $(`<div id="html_a6fe540deee64a17807abcaa81b66e93" style="width: 100.0%; height: 100.0%;">Codice: LEIS00100E Denominazione: I.I.S.S. "PRESTA - COLUMELLA" Dirigente: FASANO SALVATORE</div>`)[0];
+            popup_8482c424a0c34d99892982e0676037e2.setContent(html_a6fe540deee64a17807abcaa81b66e93);
+        
+
+        marker_ebf1c8bdd043425ca5999d6e6f23bb30.bindPopup(popup_8482c424a0c34d99892982e0676037e2)
+        ;
+
+        
+    
+    
+            marker_ebf1c8bdd043425ca5999d6e6f23bb30.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5530e7e178fa4dd4b0bc2981a0f7838d = L.marker(
+                [39.883733, 18.3348531],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_ecebd3d8e0fa4c9bb5058236d226a427 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5530e7e178fa4dd4b0bc2981a0f7838d.setIcon(icon_ecebd3d8e0fa4c9bb5058236d226a427);
+        
+    
+        var popup_460f17dc8cc94978b1091d10eb2ea768 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0051e32a4655405db84de154040a1cf3 = $(`<div id="html_0051e32a4655405db84de154040a1cf3" style="width: 100.0%; height: 100.0%;">Codice: LEIS003006 Denominazione: I.T. "GAETANO SALVEMINI" Dirigente: VANTAGGIATO CHIARA FLORINDA</div>`)[0];
+            popup_460f17dc8cc94978b1091d10eb2ea768.setContent(html_0051e32a4655405db84de154040a1cf3);
+        
+
+        marker_5530e7e178fa4dd4b0bc2981a0f7838d.bindPopup(popup_460f17dc8cc94978b1091d10eb2ea768)
+        ;
+
+        
+    
+    
+            marker_5530e7e178fa4dd4b0bc2981a0f7838d.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1349dd9d8b2641b29770e8d90b7a9471 = L.marker(
+                [40.0171233, 18.1657271],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_a8924db50b31466b9ec54e7ebda514d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1349dd9d8b2641b29770e8d90b7a9471.setIcon(icon_a8924db50b31466b9ec54e7ebda514d7);
+        
+    
+        var popup_43788e0ddf4d43559c02eca1478eecee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1feaf65f2b524ad5bac107a09f70afb3 = $(`<div id="html_1feaf65f2b524ad5bac107a09f70afb3" style="width: 100.0%; height: 100.0%;">Codice: LEIS00600N Denominazione: I.I.S.S. "ANTONIO MEUCCI" Dirigente: AMANTI CONCETTA</div>`)[0];
+            popup_43788e0ddf4d43559c02eca1478eecee.setContent(html_1feaf65f2b524ad5bac107a09f70afb3);
+        
+
+        marker_1349dd9d8b2641b29770e8d90b7a9471.bindPopup(popup_43788e0ddf4d43559c02eca1478eecee)
+        ;
+
+        
+    
+    
+            marker_1349dd9d8b2641b29770e8d90b7a9471.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10afcdb23fc54e0183e444a3bc23b97a = L.marker(
+                [40.0115917, 18.17672],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_e1cc5751a80e48218683adf62853dfdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_10afcdb23fc54e0183e444a3bc23b97a.setIcon(icon_e1cc5751a80e48218683adf62853dfdd);
+        
+    
+        var popup_1dd46f68b94d4c7d9ce449ba49d0edc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c30caed80d9e41a9b48b9a0f06ff650c = $(`<div id="html_c30caed80d9e41a9b48b9a0f06ff650c" style="width: 100.0%; height: 100.0%;">Codice: LEIS011005 Denominazione: LICEO "RITA LEVI MONTALCINI" Dirigente: CASARANO MONIA</div>`)[0];
+            popup_1dd46f68b94d4c7d9ce449ba49d0edc6.setContent(html_c30caed80d9e41a9b48b9a0f06ff650c);
+        
+
+        marker_10afcdb23fc54e0183e444a3bc23b97a.bindPopup(popup_1dd46f68b94d4c7d9ce449ba49d0edc6)
+        ;
+
+        
+    
+    
+            marker_10afcdb23fc54e0183e444a3bc23b97a.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_128b8b303d934d1fb1fe1a7bb481b39e = L.marker(
+                [40.0559405, 17.9928675],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_919acd32d68045668a72258d38c9af83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_128b8b303d934d1fb1fe1a7bb481b39e.setIcon(icon_919acd32d68045668a72258d38c9af83);
+        
+    
+        var popup_ccd8c6b39c1844b881c435ff25d59614 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db89cf437735479bbb5c971382bfd365 = $(`<div id="html_db89cf437735479bbb5c971382bfd365" style="width: 100.0%; height: 100.0%;">Codice: LEIS012001 Denominazione: LICEO "QUINTO ENNIO" Dirigente: ERRICO ANTONIO</div>`)[0];
+            popup_ccd8c6b39c1844b881c435ff25d59614.setContent(html_db89cf437735479bbb5c971382bfd365);
+        
+
+        marker_128b8b303d934d1fb1fe1a7bb481b39e.bindPopup(popup_ccd8c6b39c1844b881c435ff25d59614)
+        ;
+
+        
+    
+    
+            marker_128b8b303d934d1fb1fe1a7bb481b39e.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17ae8d6b239a4e35a29619265d8b3134 = L.marker(
+                [40.1807723, 18.0345504],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_a0e0097645ae45b999738ddc47ddc512 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_17ae8d6b239a4e35a29619265d8b3134.setIcon(icon_a0e0097645ae45b999738ddc47ddc512);
+        
+    
+        var popup_c56e2687e0904ca28a4cd06c7cac3a9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49b677c30a554909a6e45a975a28ff32 = $(`<div id="html_49b677c30a554909a6e45a975a28ff32" style="width: 100.0%; height: 100.0%;">Codice: LEIS01300R Denominazione: LICEO GALILEI(CLASS-SCIENT-LSU)-NARDO Dirigente: FRACELLA EMILIA</div>`)[0];
+            popup_c56e2687e0904ca28a4cd06c7cac3a9e.setContent(html_49b677c30a554909a6e45a975a28ff32);
+        
+
+        marker_17ae8d6b239a4e35a29619265d8b3134.bindPopup(popup_c56e2687e0904ca28a4cd06c7cac3a9e)
+        ;
+
+        
+    
+    
+            marker_17ae8d6b239a4e35a29619265d8b3134.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cf13120c63641a3a14d86d6318a7a87 = L.marker(
+                [39.9232214, 18.3657012],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_100e8626e6df416398abcc9c6f397838 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2cf13120c63641a3a14d86d6318a7a87.setIcon(icon_100e8626e6df416398abcc9c6f397838);
+        
+    
+        var popup_e86fa697b5964cbebddfc99aefc8cc9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8d93bfafa7647778850adec6f60a0c5 = $(`<div id="html_f8d93bfafa7647778850adec6f60a0c5" style="width: 100.0%; height: 100.0%;">Codice: LEIS01400L Denominazione: LICEO "G. STAMPACCHIA"  - TRICASE Dirigente: POLIMENO MAURO VITALE</div>`)[0];
+            popup_e86fa697b5964cbebddfc99aefc8cc9a.setContent(html_f8d93bfafa7647778850adec6f60a0c5);
+        
+
+        marker_2cf13120c63641a3a14d86d6318a7a87.bindPopup(popup_e86fa697b5964cbebddfc99aefc8cc9a)
+        ;
+
+        
+    
+    
+            marker_2cf13120c63641a3a14d86d6318a7a87.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_087f5a7dc6404d4885a13154a8264385 = L.marker(
+                [39.92254, 18.36289],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_579ad1fc0f37453bb955dba3eb7c53e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_087f5a7dc6404d4885a13154a8264385.setIcon(icon_579ad1fc0f37453bb955dba3eb7c53e9);
+        
+    
+        var popup_58ca82b75f80435e85c3a7201fb0c56b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd46204938dc47698541d5a4d91d766d = $(`<div id="html_fd46204938dc47698541d5a4d91d766d" style="width: 100.0%; height: 100.0%;">Codice: LEIS016008 Denominazione: IISS DON TONINO BELLO Dirigente: MANCA ANNA LENA</div>`)[0];
+            popup_58ca82b75f80435e85c3a7201fb0c56b.setContent(html_fd46204938dc47698541d5a4d91d766d);
+        
+
+        marker_087f5a7dc6404d4885a13154a8264385.bindPopup(popup_58ca82b75f80435e85c3a7201fb0c56b)
+        ;
+
+        
+    
+    
+            marker_087f5a7dc6404d4885a13154a8264385.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_798ad0a7c3d341dbb55f38fbfe2b575e = L.marker(
+                [40.0127521, 18.1538842],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_f96d236bbcdd4beabf97905291b96191 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_798ad0a7c3d341dbb55f38fbfe2b575e.setIcon(icon_f96d236bbcdd4beabf97905291b96191);
+        
+    
+        var popup_b61c68fd23a643389648e3034a5c76f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8229e85a28e4369bc08bad97b6fc0c0 = $(`<div id="html_c8229e85a28e4369bc08bad97b6fc0c0" style="width: 100.0%; height: 100.0%;">Codice: LEIS017004 Denominazione: I.I.S.S. F. BOTTAZZI CASARANO Dirigente: NEGRO SALVATORE</div>`)[0];
+            popup_b61c68fd23a643389648e3034a5c76f6.setContent(html_c8229e85a28e4369bc08bad97b6fc0c0);
+        
+
+        marker_798ad0a7c3d341dbb55f38fbfe2b575e.bindPopup(popup_b61c68fd23a643389648e3034a5c76f6)
+        ;
+
+        
+    
+    
+            marker_798ad0a7c3d341dbb55f38fbfe2b575e.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e973c17198944b15bfa49528f627a928 = L.marker(
+                [40.1229796, 18.2978337],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_306aa68c654a46168da61e65a204357e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e973c17198944b15bfa49528f627a928.setIcon(icon_306aa68c654a46168da61e65a204357e);
+        
+    
+        var popup_bb182715344142f5bd5af0ffc3eb82cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ee513924b614958ac4783b94055d377 = $(`<div id="html_9ee513924b614958ac4783b94055d377" style="width: 100.0%; height: 100.0%;">Codice: LEIS02100Q Denominazione: I.I.S.S. "E. LANOCE" Dirigente: CASARANO GIOVANNI</div>`)[0];
+            popup_bb182715344142f5bd5af0ffc3eb82cd.setContent(html_9ee513924b614958ac4783b94055d377);
+        
+
+        marker_e973c17198944b15bfa49528f627a928.bindPopup(popup_bb182715344142f5bd5af0ffc3eb82cd)
+        ;
+
+        
+    
+    
+            marker_e973c17198944b15bfa49528f627a928.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea46cbc68d75477c8fda744536b8f68e = L.marker(
+                [40.1837567, 18.0320321],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_0647032dd3b7407b81aab3d25a4dcc61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ea46cbc68d75477c8fda744536b8f68e.setIcon(icon_0647032dd3b7407b81aab3d25a4dcc61);
+        
+    
+        var popup_c5107a03a06f48dbbfd3d404d13c38aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50e7b3ae76b84126a5b0dcd18779299c = $(`<div id="html_50e7b3ae76b84126a5b0dcd18779299c" style="width: 100.0%; height: 100.0%;">Codice: LEIS02600V Denominazione: I.I.S.S. VANONI-NARDO' Dirigente: DESTRADIS ANGELO ANTONIO</div>`)[0];
+            popup_c5107a03a06f48dbbfd3d404d13c38aa.setContent(html_50e7b3ae76b84126a5b0dcd18779299c);
+        
+
+        marker_ea46cbc68d75477c8fda744536b8f68e.bindPopup(popup_c5107a03a06f48dbbfd3d404d13c38aa)
+        ;
+
+        
+    
+    
+            marker_ea46cbc68d75477c8fda744536b8f68e.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58466af989b841c7a0549f1cf9e07bd8 = L.marker(
+                [40.3461826, 18.1710538],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_eccc0e705f81433ba4a8f067e5086a8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_58466af989b841c7a0549f1cf9e07bd8.setIcon(icon_eccc0e705f81433ba4a8f067e5086a8f);
+        
+    
+        var popup_6fa235a2bc534609b27ec2def83be7a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d898137f25e14c148f47cdbb6c097dc9 = $(`<div id="html_d898137f25e14c148f47cdbb6c097dc9" style="width: 100.0%; height: 100.0%;">Codice: LEIS03100A Denominazione: I.I.S.S.  A. DE PACE Dirigente: MADARO METRANGOLO SILVIA</div>`)[0];
+            popup_6fa235a2bc534609b27ec2def83be7a0.setContent(html_d898137f25e14c148f47cdbb6c097dc9);
+        
+
+        marker_58466af989b841c7a0549f1cf9e07bd8.bindPopup(popup_6fa235a2bc534609b27ec2def83be7a0)
+        ;
+
+        
+    
+    
+            marker_58466af989b841c7a0549f1cf9e07bd8.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ab6869d3bfa4a18aaa651a1d3a8a003 = L.marker(
+                [40.0471442, 18.123129],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_f71029b87a214a928393e9c96db65dd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9ab6869d3bfa4a18aaa651a1d3a8a003.setIcon(icon_f71029b87a214a928393e9c96db65dd9);
+        
+    
+        var popup_241cc962b8ab4abf86785d71f3f431c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcd0446ac4c84fe48374d6cc4a1c0030 = $(`<div id="html_bcd0446ac4c84fe48374d6cc4a1c0030" style="width: 100.0%; height: 100.0%;">Codice: LEIS033002 Denominazione: I.I.S.S."GIANNELLI"-PARABITA Dirigente: PREITE COSIMO</div>`)[0];
+            popup_241cc962b8ab4abf86785d71f3f431c9.setContent(html_bcd0446ac4c84fe48374d6cc4a1c0030);
+        
+
+        marker_9ab6869d3bfa4a18aaa651a1d3a8a003.bindPopup(popup_241cc962b8ab4abf86785d71f3f431c9)
+        ;
+
+        
+    
+    
+            marker_9ab6869d3bfa4a18aaa651a1d3a8a003.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3b226a6d2804e049a59a15ba87242ff = L.marker(
+                [40.3478392, 18.1847044],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_32aa6222167e46febf2f566a8b2027c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e3b226a6d2804e049a59a15ba87242ff.setIcon(icon_32aa6222167e46febf2f566a8b2027c4);
+        
+    
+        var popup_6e5b5e7f374d4b689b6bce3ce5843981 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11de1a674b254ddf93acd3f9ee0a1328 = $(`<div id="html_11de1a674b254ddf93acd3f9ee0a1328" style="width: 100.0%; height: 100.0%;">Codice: LEIS03400T Denominazione: I.I.S.S. "E. FERMI" Dirigente: RUSSO GIUSEPPE</div>`)[0];
+            popup_6e5b5e7f374d4b689b6bce3ce5843981.setContent(html_11de1a674b254ddf93acd3f9ee0a1328);
+        
+
+        marker_e3b226a6d2804e049a59a15ba87242ff.bindPopup(popup_6e5b5e7f374d4b689b6bce3ce5843981)
+        ;
+
+        
+    
+    
+            marker_e3b226a6d2804e049a59a15ba87242ff.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_937d531719164f8fa29912a134794b26 = L.marker(
+                [40.14513375, 18.07567377683899],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_28c852471a854e4eb82b4a9c99000393 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_937d531719164f8fa29912a134794b26.setIcon(icon_28c852471a854e4eb82b4a9c99000393);
+        
+    
+        var popup_c427c0c45d694747bd8899f6908464be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_973ce10d640f49a6a3409a2a239ecb20 = $(`<div id="html_973ce10d640f49a6a3409a2a239ecb20" style="width: 100.0%; height: 100.0%;">Codice: LEIS037009 Denominazione: I.I.S.S. "ENRICO MEDI" - GALATONE Dirigente: VENNERI ANGELA</div>`)[0];
+            popup_c427c0c45d694747bd8899f6908464be.setContent(html_973ce10d640f49a6a3409a2a239ecb20);
+        
+
+        marker_937d531719164f8fa29912a134794b26.bindPopup(popup_c427c0c45d694747bd8899f6908464be)
+        ;
+
+        
+    
+    
+            marker_937d531719164f8fa29912a134794b26.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f217b2791a54e6b91720dc2de095be8 = L.marker(
+                [40.12220665, 18.293749852993145],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_1ed24c89db644c5a9cc0e5b48bc77d92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4f217b2791a54e6b91720dc2de095be8.setIcon(icon_1ed24c89db644c5a9cc0e5b48bc77d92);
+        
+    
+        var popup_0f05cc0bc4344a5188addd56a1ea2b7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5babb2c2a4314c3190cd6ab2a0e8c9ae = $(`<div id="html_5babb2c2a4314c3190cd6ab2a0e8c9ae" style="width: 100.0%; height: 100.0%;">Codice: LEIS038005 Denominazione: I. I. S. S.  "E. MATTEI" Dirigente: MAGGIO MARIA</div>`)[0];
+            popup_0f05cc0bc4344a5188addd56a1ea2b7f.setContent(html_5babb2c2a4314c3190cd6ab2a0e8c9ae);
+        
+
+        marker_4f217b2791a54e6b91720dc2de095be8.bindPopup(popup_0f05cc0bc4344a5188addd56a1ea2b7f)
+        ;
+
+        
+    
+    
+            marker_4f217b2791a54e6b91720dc2de095be8.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_332d64c79363485e91b45c8aaaf8395f = L.marker(
+                [40.2732725, 18.042924],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_251878f291444b638728a7786f6ffbc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_332d64c79363485e91b45c8aaaf8395f.setIcon(icon_251878f291444b638728a7786f6ffbc6);
+        
+    
+        var popup_e9c13c894a98475198ad2cf4a9b7cbbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_277b3ac116574a1794aeb4b4ddd17e40 = $(`<div id="html_277b3ac116574a1794aeb4b4ddd17e40" style="width: 100.0%; height: 100.0%;">Codice: LEIS039001 Denominazione: I.I.S.S. BACHELET COPERTINO Dirigente: CHEZZA ANNA MARINELLA</div>`)[0];
+            popup_e9c13c894a98475198ad2cf4a9b7cbbe.setContent(html_277b3ac116574a1794aeb4b4ddd17e40);
+        
+
+        marker_332d64c79363485e91b45c8aaaf8395f.bindPopup(popup_e9c13c894a98475198ad2cf4a9b7cbbe)
+        ;
+
+        
+    
+    
+            marker_332d64c79363485e91b45c8aaaf8395f.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f647afa13314f93b0f3ecda895f82bf = L.marker(
+                [40.3613152, 18.1926779],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_f80f3f65f50a4747bd943b031a1a8419 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1f647afa13314f93b0f3ecda895f82bf.setIcon(icon_f80f3f65f50a4747bd943b031a1a8419);
+        
+    
+        var popup_0ab4e6322867472ab4e361278dcb44c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a31b127678cc4ed5a1d3ea0259e5ebcf = $(`<div id="html_a31b127678cc4ed5a1d3ea0259e5ebcf" style="width: 100.0%; height: 100.0%;">Codice: LEIS04200R Denominazione: I.I.S.S."GALILEI COSTA SCARAMBONE " Dirigente: MAZZOTTA ADDOLORATA</div>`)[0];
+            popup_0ab4e6322867472ab4e361278dcb44c4.setContent(html_a31b127678cc4ed5a1d3ea0259e5ebcf);
+        
+
+        marker_1f647afa13314f93b0f3ecda895f82bf.bindPopup(popup_0ab4e6322867472ab4e361278dcb44c4)
+        ;
+
+        
+    
+    
+            marker_1f647afa13314f93b0f3ecda895f82bf.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5d730f2cfd0479289c41a5edcc1e247 = L.marker(
+                [40.3687858, 18.1721225],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_1150f052979d4fe19276df8bdd1d174f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e5d730f2cfd0479289c41a5edcc1e247.setIcon(icon_1150f052979d4fe19276df8bdd1d174f);
+        
+    
+        var popup_0285683ffebb458aadde316027798ca7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d817ce5c6ed4c9e8818e0e789ee30d8 = $(`<div id="html_0d817ce5c6ed4c9e8818e0e789ee30d8" style="width: 100.0%; height: 100.0%;">Codice: LEIS04400C Denominazione: I.I.S.S.  "F. CALASSO" Dirigente: VERNALEONE ANNA MARIA</div>`)[0];
+            popup_0285683ffebb458aadde316027798ca7.setContent(html_0d817ce5c6ed4c9e8818e0e789ee30d8);
+        
+
+        marker_e5d730f2cfd0479289c41a5edcc1e247.bindPopup(popup_0285683ffebb458aadde316027798ca7)
+        ;
+
+        
+    
+    
+            marker_e5d730f2cfd0479289c41a5edcc1e247.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_465b5781271c4ccabc64cf64056c2438 = L.marker(
+                [40.011655, 18.1640016],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_ab9638dad52e440caace47380303cf79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_465b5781271c4ccabc64cf64056c2438.setIcon(icon_ab9638dad52e440caace47380303cf79);
+        
+    
+        var popup_1618dedc8e8141cd8e7a6a8323d16cec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2277e013ba1f44169194065158b6cc08 = $(`<div id="html_2277e013ba1f44169194065158b6cc08" style="width: 100.0%; height: 100.0%;">Codice: LEIS046004 Denominazione: LICEO "VIRGILIO" LECCE Dirigente: CILLO DARIO</div>`)[0];
+            popup_1618dedc8e8141cd8e7a6a8323d16cec.setContent(html_2277e013ba1f44169194065158b6cc08);
+        
+
+        marker_465b5781271c4ccabc64cf64056c2438.bindPopup(popup_1618dedc8e8141cd8e7a6a8323d16cec)
+        ;
+
+        
+    
+    
+            marker_465b5781271c4ccabc64cf64056c2438.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9c2aae00228431b988b8c73b2364acb = L.marker(
+                [40.168366, 18.1738287],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_ed1c2025f1dd401e919631633c24d621 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c9c2aae00228431b988b8c73b2364acb.setIcon(icon_ed1c2025f1dd401e919631633c24d621);
+        
+    
+        var popup_7318534a34a74aa88300788d7c4e9ff9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fd72dacff6545bab6ff4e44407d62b9 = $(`<div id="html_7fd72dacff6545bab6ff4e44407d62b9" style="width: 100.0%; height: 100.0%;">Codice: LEIS04900G Denominazione: IISS "LAPORTA/FALCONE-BORSELLINO" Dirigente: VALERINI ANDREA</div>`)[0];
+            popup_7318534a34a74aa88300788d7c4e9ff9.setContent(html_7fd72dacff6545bab6ff4e44407d62b9);
+        
+
+        marker_c9c2aae00228431b988b8c73b2364acb.bindPopup(popup_7318534a34a74aa88300788d7c4e9ff9)
+        ;
+
+        
+    
+    
+            marker_c9c2aae00228431b988b8c73b2364acb.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_691f3d812b73453eb8b69bebd0fa4b5f = L.marker(
+                [40.3474333, 18.1825049],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_367a5518c3954b9c9073cc063699d6a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_691f3d812b73453eb8b69bebd0fa4b5f.setIcon(icon_367a5518c3954b9c9073cc063699d6a8);
+        
+    
+        var popup_31397e811e60497a822cf8f6591f03df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_542da0440504454db524d73e9c20dbee = $(`<div id="html_542da0440504454db524d73e9c20dbee" style="width: 100.0%; height: 100.0%;">Codice: LEMM00600E Denominazione: S.S. 1 G. "A. GRANDI" Dirigente: MANCA MARIA ROSARIA</div>`)[0];
+            popup_31397e811e60497a822cf8f6591f03df.setContent(html_542da0440504454db524d73e9c20dbee);
+        
+
+        marker_691f3d812b73453eb8b69bebd0fa4b5f.bindPopup(popup_31397e811e60497a822cf8f6591f03df)
+        ;
+
+        
+    
+    
+            marker_691f3d812b73453eb8b69bebd0fa4b5f.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_936d05194d084fc0b3a83272a5e8b989 = L.marker(
+                [40.3573722, 18.1621411],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_0a737f01a4b343cc96ddedb70dc244b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_936d05194d084fc0b3a83272a5e8b989.setIcon(icon_0a737f01a4b343cc96ddedb70dc244b7);
+        
+    
+        var popup_47924ddaa7244d56a223b8ec81f39915 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cc4e654259643a38a8d4aafe438538e = $(`<div id="html_3cc4e654259643a38a8d4aafe438538e" style="width: 100.0%; height: 100.0%;">Codice: LEMM31000R Denominazione: CPIA 1 LECCE Dirigente: CHEZZA ANNA MARINELLA</div>`)[0];
+            popup_47924ddaa7244d56a223b8ec81f39915.setContent(html_3cc4e654259643a38a8d4aafe438538e);
+        
+
+        marker_936d05194d084fc0b3a83272a5e8b989.bindPopup(popup_47924ddaa7244d56a223b8ec81f39915)
+        ;
+
+        
+    
+    
+            marker_936d05194d084fc0b3a83272a5e8b989.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9350deeac46480f81bd8c7a75a0afee = L.marker(
+                [40.1213729, 18.2992086],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_97bf19c39b2246cea533160688b3c754 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f9350deeac46480f81bd8c7a75a0afee.setIcon(icon_97bf19c39b2246cea533160688b3c754);
+        
+    
+        var popup_3496667654bb4c14a19d0ad9b94c178f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_770191d99ecd48d5a31caf1d5e560122 = $(`<div id="html_770191d99ecd48d5a31caf1d5e560122" style="width: 100.0%; height: 100.0%;">Codice: LEPC01000G Denominazione: LICEO CLASSICO STATALE "F. CAPECE" Dirigente: MARGIOTTA GABRIELLA</div>`)[0];
+            popup_3496667654bb4c14a19d0ad9b94c178f.setContent(html_770191d99ecd48d5a31caf1d5e560122);
+        
+
+        marker_f9350deeac46480f81bd8c7a75a0afee.bindPopup(popup_3496667654bb4c14a19d0ad9b94c178f)
+        ;
+
+        
+    
+    
+            marker_f9350deeac46480f81bd8c7a75a0afee.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39512a909bfa4db09410659f4d05ec3f = L.marker(
+                [40.3553017, 18.1662118],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_b1024588dbb64359928391498f8afc69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_39512a909bfa4db09410659f4d05ec3f.setIcon(icon_b1024588dbb64359928391498f8afc69);
+        
+    
+        var popup_0903ee56f538492ebcf184055f39c340 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f63931c8adc4326ae60c016056f04ca = $(`<div id="html_0f63931c8adc4326ae60c016056f04ca" style="width: 100.0%; height: 100.0%;">Codice: LEPC03000R Denominazione: LICEO CLASSICO MUSICALE "PALMIERI" Dirigente: DI CUONZO LOREDANA</div>`)[0];
+            popup_0903ee56f538492ebcf184055f39c340.setContent(html_0f63931c8adc4326ae60c016056f04ca);
+        
+
+        marker_39512a909bfa4db09410659f4d05ec3f.bindPopup(popup_0903ee56f538492ebcf184055f39c340)
+        ;
+
+        
+    
+    
+            marker_39512a909bfa4db09410659f4d05ec3f.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bcdd956bfed54d5db8ccffc177f042cb = L.marker(
+                [40.3410195, 18.1763122],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_24634019e76c45e58ce0a8ddff3d6435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bcdd956bfed54d5db8ccffc177f042cb.setIcon(icon_24634019e76c45e58ce0a8ddff3d6435);
+        
+    
+        var popup_543f520e7e1145ccbcd520eab19e603e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e2aea113e494f7b9dceebc78c889f21 = $(`<div id="html_2e2aea113e494f7b9dceebc78c889f21" style="width: 100.0%; height: 100.0%;">Codice: LEPM01000Q Denominazione: LICEO PIETRO SICILIANI Dirigente: ITALIANO VITTORIA</div>`)[0];
+            popup_543f520e7e1145ccbcd520eab19e603e.setContent(html_2e2aea113e494f7b9dceebc78c889f21);
+        
+
+        marker_bcdd956bfed54d5db8ccffc177f042cb.bindPopup(popup_543f520e7e1145ccbcd520eab19e603e)
+        ;
+
+        
+    
+    
+            marker_bcdd956bfed54d5db8ccffc177f042cb.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa548c7f13174df5900f0045465c2a7a = L.marker(
+                [39.93069, 18.36593],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_41dcfb35831042f7862091fb2b6e88fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_aa548c7f13174df5900f0045465c2a7a.setIcon(icon_41dcfb35831042f7862091fb2b6e88fd);
+        
+    
+        var popup_07bbf201e7654b2784d2c67ccb64f75b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9239de6087e14417860c485bb37d473c = $(`<div id="html_9239de6087e14417860c485bb37d473c" style="width: 100.0%; height: 100.0%;">Codice: LEPM050006 Denominazione: LICEO STATALE GIROLAMO COMI Dirigente: CAZZATO ANTONELLA</div>`)[0];
+            popup_07bbf201e7654b2784d2c67ccb64f75b.setContent(html_9239de6087e14417860c485bb37d473c);
+        
+
+        marker_aa548c7f13174df5900f0045465c2a7a.bindPopup(popup_07bbf201e7654b2784d2c67ccb64f75b)
+        ;
+
+        
+    
+    
+            marker_aa548c7f13174df5900f0045465c2a7a.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_433750f9685c4f29b2a8a5daefa57a22 = L.marker(
+                [40.0087929, 18.1654075],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_c59c0e32f88b4fd7b193cae3c1cb063a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_433750f9685c4f29b2a8a5daefa57a22.setIcon(icon_c59c0e32f88b4fd7b193cae3c1cb063a);
+        
+    
+        var popup_05e4498042f3419bb04b0441366f6402 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ed188db00f44dafa23b9041af83b09d = $(`<div id="html_0ed188db00f44dafa23b9041af83b09d" style="width: 100.0%; height: 100.0%;">Codice: LEPS03000X Denominazione: LICEO SCIENTIFICO E LINGUISTICO "VANINI" Dirigente: ATTANASI MARIA GRAZIA</div>`)[0];
+            popup_05e4498042f3419bb04b0441366f6402.setContent(html_0ed188db00f44dafa23b9041af83b09d);
+        
+
+        marker_433750f9685c4f29b2a8a5daefa57a22.bindPopup(popup_05e4498042f3419bb04b0441366f6402)
+        ;
+
+        
+    
+    
+            marker_433750f9685c4f29b2a8a5daefa57a22.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fea664ed93a64d35907c83c0286dacaf = L.marker(
+                [40.168366, 18.1738287],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_c80e7a2564f044ef85804ddeccb34edc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fea664ed93a64d35907c83c0286dacaf.setIcon(icon_c80e7a2564f044ef85804ddeccb34edc);
+        
+    
+        var popup_650875b91b474fdc8809d32149578b74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83e98b3b5abe4143a3d72efd580d2446 = $(`<div id="html_83e98b3b5abe4143a3d72efd580d2446" style="width: 100.0%; height: 100.0%;">Codice: LEPS04000E Denominazione: LICEO SCIENT. E LING. STATALE"A.VALLONE" Dirigente: BOTTAZZO MARIA ROSARIA</div>`)[0];
+            popup_650875b91b474fdc8809d32149578b74.setContent(html_83e98b3b5abe4143a3d72efd580d2446);
+        
+
+        marker_fea664ed93a64d35907c83c0286dacaf.bindPopup(popup_650875b91b474fdc8809d32149578b74)
+        ;
+
+        
+    
+    
+            marker_fea664ed93a64d35907c83c0286dacaf.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6463a88cfe5a4cddbab3e49df9bb1767 = L.marker(
+                [40.3613152, 18.1926779],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_ef5fd2b434cc4906b3e14dc55ca592e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6463a88cfe5a4cddbab3e49df9bb1767.setIcon(icon_ef5fd2b434cc4906b3e14dc55ca592e0);
+        
+    
+        var popup_e990c523fdaa49659f2a9435362cce58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de312fec3f804e598a9f5494b548bc8b = $(`<div id="html_de312fec3f804e598a9f5494b548bc8b" style="width: 100.0%; height: 100.0%;">Codice: LEPS07000A Denominazione: LICEO SCIENTIFICO BANZI BAZOLI GIULIETTA Dirigente: MANCA ANTONELLA</div>`)[0];
+            popup_e990c523fdaa49659f2a9435362cce58.setContent(html_de312fec3f804e598a9f5494b548bc8b);
+        
+
+        marker_6463a88cfe5a4cddbab3e49df9bb1767.bindPopup(popup_e990c523fdaa49659f2a9435362cce58)
+        ;
+
+        
+    
+    
+            marker_6463a88cfe5a4cddbab3e49df9bb1767.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53117f3fe426461c970fbb5bfb18290b = L.marker(
+                [40.3321912, 18.1432402],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_bdbe74b91a5248aea4dbe10f22b5592b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_53117f3fe426461c970fbb5bfb18290b.setIcon(icon_bdbe74b91a5248aea4dbe10f22b5592b);
+        
+    
+        var popup_43b5f71d7bac4b638da45c7970e6dd47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69d507bdb6df4929862475652c579f76 = $(`<div id="html_69d507bdb6df4929862475652c579f76" style="width: 100.0%; height: 100.0%;">Codice: LESL03000R Denominazione: LICEO ART. E COREUT. "CIARDO-PELLEGRINO" Dirigente: RUCCO TIZIANA PAOLA</div>`)[0];
+            popup_43b5f71d7bac4b638da45c7970e6dd47.setContent(html_69d507bdb6df4929862475652c579f76);
+        
+
+        marker_53117f3fe426461c970fbb5bfb18290b.bindPopup(popup_43b5f71d7bac4b638da45c7970e6dd47)
+        ;
+
+        
+    
+    
+            marker_53117f3fe426461c970fbb5bfb18290b.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d00fbe869d448cf849314b91c5a5c0b = L.marker(
+                [40.3461262, 18.1875685],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_98e9d2b693dd4b2daa8c760e47485495 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6d00fbe869d448cf849314b91c5a5c0b.setIcon(icon_98e9d2b693dd4b2daa8c760e47485495);
+        
+    
+        var popup_a5c91f5a7a4343b08c472a4221435df7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_316c31e43aa64ef2ad4ab38b66d168e1 = $(`<div id="html_316c31e43aa64ef2ad4ab38b66d168e1" style="width: 100.0%; height: 100.0%;">Codice: LETD08000R Denominazione: ISTITUTO TECNICO "OLIVETTI" LECCE Dirigente: COLELLA PATRIZIA</div>`)[0];
+            popup_a5c91f5a7a4343b08c472a4221435df7.setContent(html_316c31e43aa64ef2ad4ab38b66d168e1);
+        
+
+        marker_6d00fbe869d448cf849314b91c5a5c0b.bindPopup(popup_a5c91f5a7a4343b08c472a4221435df7)
+        ;
+
+        
+    
+    
+            marker_6d00fbe869d448cf849314b91c5a5c0b.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6244113a220d4c7b9d123bd0ebb6b2d5 = L.marker(
+                [40.36039705, 18.194838160387956],
+                {}
+            ).addTo(marker_cluster_5678e6fbb38f4a63b51f49fab2ef2be8);
+        
+    
+            var icon_4a84fea924d74040ae8de9b05ededdb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "graduation-cap", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6244113a220d4c7b9d123bd0ebb6b2d5.setIcon(icon_4a84fea924d74040ae8de9b05ededdb7);
+        
+    
+        var popup_3dcb3b8e791246d9bef1d96890669928 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a31688e0c97430fb43d79b6647767dd = $(`<div id="html_8a31688e0c97430fb43d79b6647767dd" style="width: 100.0%; height: 100.0%;">Codice: LETE010002 Denominazione: IST.TECNICO "GRAZIA DELEDDA"-LECCE Dirigente: CAPONE RAFFAELE</div>`)[0];
+            popup_3dcb3b8e791246d9bef1d96890669928.setContent(html_8a31688e0c97430fb43d79b6647767dd);
+        
+
+        marker_6244113a220d4c7b9d123bd0ebb6b2d5.bindPopup(popup_3dcb3b8e791246d9bef1d96890669928)
+        ;
+
+        
+    
+    
+            marker_6244113a220d4c7b9d123bd0ebb6b2d5.bindTooltip(
+                `<div>
+                     Fare click per informazioni
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
