@@ -1,14 +1,26 @@
-# Geocodifica in Python
-## Che cos'è la geocodifica?
-La geocodifica è il processo di conversione degli indirizzi in coordinate geografiche. Questo significa trasformare gli indirizzi in coppie (latitudine;longitudine). Le coordinate ottenute possono essere utilizzate per posizionare degli indicatori su una mappa.
-La geocodifica rappresenta una parte essenziale di molti processi geospaziali, per esempio permette di visualizzare dei punti di vendita su una mappa,  calcolare un percorso ottimizzato per una consegna o cercare nel raggio di un punto di origine.
+# Creare una mappa con Folium library
+L’importanza delle mappe è indiscussa; ormai rappresentano un aiuto nell’esplorazione del mondo, nel raggiungere un luogo di destinazione e/o interesse.
+Questo articolo si ricollega con il lavoro svolto nel precedente articolo relativo all’introduzione alla geocodifica e integra i risultati ottenuti attraverso la visualizzazione dei dati su di una mappa per mezzo della libreria di Python Folium.
 
-## Geocodifica in Python
-In Python sono disponibili molte librerie per tale scopo.La più veloce è l' API di Google Maps, ideale nel caso di un gran numero di indirizzi da convertire in coordinate in modo rapido.
-Da qualche anno l'API di Google Maps non è più gratuita, pertanto in questo articolo utilizzerò la sua “naturale” alternativa ossia l'API OpenStreetMap, completamente gratuita. Tuttavia, l'API OpenStreetMap presenta l’inconveniente di essere molto più lenta e anche leggermente meno precisa.
-Altra possibilità sarebbe l’utilizzo, per esempio, di MapQuest, che però richiede una semplice registrazione per ottenere una Consumer Key gratuita fino a 15000 richieste al mese.
+## Cos’è Folium?
+Come detto Folium è una libreria di Python utilizzata per la visualizzazione di dati geospaziali, facile da usare e potente allo stesso tempo. Folium è un wrapper Python per Leaflet.js, libreria JavaScript open source fondamentale per la stampa di mappe interattive.
+La prima operazione da svolgere è proprio l’installazione di Folium nel proprio ambiente di lavoro, usando il comando:
 
-## API OpenStreetMap
-Passiamo alla parte pratica!
-Utilizzerò questa API per ottenere le coordinate geografiche delle Istituzioni scolastiche presenti in Puglia. Per ridurre i tempi di elaborazione dell’API OpenStreetMap, limiterò la ricerca alle sole istituzioni scolastiche presenti in provincia di Lecce.
-Per ricavare l'elenco delle Istituzioni Scolastiche Pugliesi, utilizzo gli Open Data dell'USR Puglia disponibili al seguente indirizzo https://www.pugliausr.gov.it/index.php/70-la-scuola-in-numeri
+<b>pip install Folium</b>
+
+## Creare e visualizzare mappe con Folium
+Prendiamo in considerazione un esempio pratico: si voglia visualizzare su una mappa la posizione delle varie Istituzioni Scolastiche. Si parte dalla lettura dei dati ricavati e memorizzati in un file .csv. 
+I dati così come caricati non sono immediatamente utilizzabili, per due ragioni: la prima perché, come visto, per alcuni Istituti non è stato possibile ricavare le coordinate e nella relativa cella è riportato semplicemente il valore “-1”; il secondo motivo è che le coordinate così come visualizzate non sono gestibili direttamente dalla libreria Folium, è necessario separare i valori di latitudine da quelli relativi alla longitudine.
+
+## Operare sul DataFrame
+Apporto le modifiche nel precedente programma in modo da eliminare i valori non necessari e aggiungere la colonna relativa alla “latitudine” e quella relativa alla “longitudine”.
+Procedo al salvataggio del file in .csv.
+A questo punto realizzo un nuovo programma, recupero il DataFrame.
+La prima operazione da fare è costruire l’oggetto mappa che “centro” in un punto ideale di coordinate pari al valore medio e fisso lo zoom iniziale.
+
+## Tracciare gli indicatori sulla Mappa
+Lo scopo è quello di contrassegnare con degli indicatori la posizione degli Istituti Scolastici sulla mappa. Un pò come succede quando si utilizza Google Maps per la navigazione, la tua posizione è contrassegnata da un indicatore e la tua destinazione è contrassegnata da un altro indicatore. Gli indicatori sono tra le cose più importanti e utili su una mappa.
+Per fare ciò si utilizza una classe folium.Marker() alla quale basta passare la latitudine e la longitudine della posizione, menzionare il popup e il suggerimento e aggiungerlo alla mappa. Questa operazione avviene in due fasi: la prima consiste nella creazione della mappa base e la seconda l’aggiunta degli indicatori.
+Inoltre, programmando opportunamente la funzione popup, è possibile inserire ulteriori informazioni riguardo la posizione contrassegnata, per esempio codice scuola, Dirigente Scolastico, etc.
+La classe icon permette di definire le caratteristiche dell’icona che rappresenta l’indicatore.
+Infine è possibile utilizzare la funzione MarkerCluster() per raggruppare in un numero le Istituzioni Scolastiche, per poi visualizzarle in base allo zoom sull’area interessata.
