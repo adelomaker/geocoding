@@ -25,4 +25,6 @@ Inoltre, programmando opportunamente la funzione popup, è possibile inserire ul
 La classe icon permette di definire le caratteristiche dell’icona che rappresenta l’indicatore.
 Infine è possibile utilizzare la funzione MarkerCluster() per raggruppare in un numero le Istituzioni Scolastiche, per poi visualizzarle in base allo zoom sull’area interessata.
 
-[a link](https://adelomaker.github.io/geocoding/DATA/mappa_base.html)
+[a Mappa Base](https://adelomaker.github.io/geocoding/DATA/mappa_base.html)
+
+[a Mappa Scuole Lecce](https://adelomaker.github.io/geocoding/DATA/mappa_scuola.html)
