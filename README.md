@@ -24,3 +24,5 @@ Per fare ciò si utilizza una classe folium.Marker() alla quale basta passare la
 Inoltre, programmando opportunamente la funzione popup, è possibile inserire ulteriori informazioni riguardo la posizione contrassegnata, per esempio codice scuola, Dirigente Scolastico, etc.
 La classe icon permette di definire le caratteristiche dell’icona che rappresenta l’indicatore.
 Infine è possibile utilizzare la funzione MarkerCluster() per raggruppare in un numero le Istituzioni Scolastiche, per poi visualizzarle in base allo zoom sull’area interessata.
+
+DATA/mappa_base.html
