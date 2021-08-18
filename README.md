@@ -25,4 +25,4 @@ Inoltre, programmando opportunamente la funzione popup, è possibile inserire ul
 La classe icon permette di definire le caratteristiche dell’icona che rappresenta l’indicatore.
 Infine è possibile utilizzare la funzione MarkerCluster() per raggruppare in un numero le Istituzioni Scolastiche, per poi visualizzarle in base allo zoom sull’area interessata.
 
-# DATA/mappa_base.html
+###DATA/mappa_base.html
